@@ -1,0 +1,25 @@
+.btn {
+  border: 1px solid green;
+  cursor: pointer;
+  color: #384440;
+  padding: 5px 10px;
+  background-color: #ffffff;
+}
+
+.btn:hover {
+  border: 1px solid #b01c4e;
+  opacity: 0.8;
+}
+
+.clear {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.danger {
+  border: 2px solid red;
+  color: orangered;
+  background-color: #f6eedd;
+  border-radius: 3px;
+}
