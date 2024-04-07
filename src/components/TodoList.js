@@ -1,3 +1,4 @@
+import "./TodoList.css";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { createTask, fetchTasks } from "../api/todoListServices";
@@ -27,8 +28,13 @@ const TodoList = () => {
   console.log(todoList);
 
   return (
-    <div>
-      <h1>Todo List</h1>
+    <div className="todo">
+      <h1 className="title">TODO LIST</h1>
+      <Input
+        value={inputTask}
+        onChange={onChangeHandler}
+        placeholder="Type task..."
+      />
       <Button
         theme={ButttonTheme.CLEAR}
         onClick={onCreateTask}
@@ -36,11 +42,6 @@ const TodoList = () => {
       >
         Create Task
       </Button>
-      <Input
-        value={inputTask}
-        onChange={onChangeHandler}
-        placeholder="New Task"
-      />
       {todoList.map((el) => (
         <TodoItem key={el._id} task={el} />
       ))}

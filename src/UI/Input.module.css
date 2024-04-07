@@ -2,7 +2,8 @@
   width: 267px;
   padding: 7px 15px;
   margin: 5px 0;
-  border: 1px solid teal;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 0.5rem;
 }
 
 .myInput::placeholder {
