@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Input from "../../UI/Input";
 import Button, { ButttonTheme } from "../../UI/Button";
@@ -10,6 +10,10 @@ const EditTaskForm = () => {
   const task = useSelector((state) => state.modal.data);
   const [updatedTask, setUpdatedTask] = useState(task.name);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    setUpdatedTask(task.name);
+  }, [task]);
 
   function onChange(event) {
     setUpdatedTask(event.target.value);

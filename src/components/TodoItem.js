@@ -39,6 +39,7 @@ const TodoItem = ({ task }) => {
 
       <div className="icons">
         <FaRegTrashAlt onClick={onDelete} className="trash_button" />
+
         <FaEdit onClick={onEdit} className="edit_button" />
       </div>
     </div>
