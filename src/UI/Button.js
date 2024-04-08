@@ -4,6 +4,8 @@ import Cl from "./Button.module.css";
 export const ButttonTheme = {
   CLEAR: "clear",
   DANGER: "danger",
+  SAVE: "save",
+  CANCEL: "cancel",
 };
 
 const Button = (props) => {

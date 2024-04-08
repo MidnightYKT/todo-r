@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import Input from "../../UI/Input";
-import Button from "../../UI/Button";
+import Button, { ButttonTheme } from "../../UI/Button";
 import { useDispatch, useSelector } from "react-redux";
 import { closeModal } from "../../redux/actions";
 import { changeTask } from "../../api/todoListServices";
@@ -29,8 +29,12 @@ const EditTaskForm = () => {
       <div>
         <h3>Edit Modal</h3>
         <Input value={updatedTask} onChange={onChange} />
-        <Button onClick={onSave}>Save</Button>
-        <Button onClick={onClose}>Cancel</Button>
+        <Button onClick={onSave} theme={ButttonTheme.SAVE}>
+          Save
+        </Button>
+        <Button onClick={onClose} theme={ButttonTheme.CANCEL}>
+          Cancel
+        </Button>
       </div>
     </div>
   );

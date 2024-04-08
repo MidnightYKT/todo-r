@@ -1,10 +1,12 @@
+import "./TodoItem.css";
 import React from "react";
-import Button, { ButttonTheme } from "../UI/Button";
 import CheckBox from "../UI/CheckBox";
 import { useDispatch } from "react-redux";
 import { changeTask } from "../api/todoListServices";
 import { openModal } from "../redux/actions";
 import { MODAL_TYPES } from "./GlobalModal";
+
+import { FaEdit, FaRegTrashAlt } from "react-icons/fa";
 
 const TodoItem = ({ task }) => {
   const dispatch = useDispatch();
@@ -22,17 +24,23 @@ const TodoItem = ({ task }) => {
   };
 
   return (
-    <div>
-      <span style={{ fontSize: "24px", paddingRight: "10px" }}>
-        {task.name}
-      </span>
-      <CheckBox checked={task.isDone} onChange={changeTaskStatus} />
+    <div className="item">
+      <div>
+        <CheckBox checked={task.isDone} onChange={changeTaskStatus} />
+        <span
+          style={{
+            fontSize: "24px",
+            paddingRight: "10px",
+          }}
+        >
+          {task.name}
+        </span>
+      </div>
 
-      <Button theme={ButttonTheme.DANGER} onClick={onDelete}>
-        Delete
-      </Button>
-
-      <Button onClick={onEdit}>Edit</Button>
+      <div className="icons">
+        <FaRegTrashAlt onClick={onDelete} className="trash_button" />
+        <FaEdit onClick={onEdit} className="edit_button" />
+      </div>
     </div>
   );
 };

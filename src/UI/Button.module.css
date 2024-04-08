@@ -7,7 +7,7 @@
 }
 
 .btn:hover {
-  border: 1px solid #b01c4e;
+  border: 1px solid #ffffff;
   opacity: 0.8;
 }
 
@@ -16,21 +16,52 @@
   background: none;
   outline: none;
   margin-left: 10px;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: #b01c4e;
   border: 2px solid #b01c4e;
   transition-duration: 0.4s;
   border-radius: 0.5rem;
 }
 
 .clear:hover {
-  background-color: #b01c4e;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .danger {
-  border: 1px solid red;
-  color: orangered;
-  background-color: #f6eedd;
-  border-radius: 3px;
+  border: none;
+  background: none;
+  outline: none;
+  margin-left: 10px;
+  color: white;
+  background-color: #ff0000;
+  border: 2px solid #ffffff;
+  transition-duration: 0.4s;
+  border-radius: 0.5rem;
+  margin-right: 10px;
+}
+
+.save {
+  border: none;
+  background: none;
+  outline: none;
+  margin-left: 10px;
+  color: white;
+  background-color: #54b956;
+  border: 2px solid #ffffff;
+  transition-duration: 0.4s;
+  border-radius: 0.5rem;
+  margin-right: 10px;
+}
+
+.cancel {
+  border: none;
+  background: none;
+  outline: none;
+  margin-left: 10px;
+  color: white;
+  background-color: #5f6b60;
+  border: 2px solid #ffffff;
+  transition-duration: 0.4s;
+  border-radius: 0.5rem;
 }

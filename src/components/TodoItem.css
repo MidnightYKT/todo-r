@@ -1,0 +1,33 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin: 3px;
+  padding: 5px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+}
+
+.trash_button {
+  height: 70%;
+  width: 70%;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.trash_button:hover {
+  fill: #b01c4e;
+}
+
+.edit_button {
+  height: 70%;
+  width: 70%;
+  cursor: pointer;
+}
+
+.edit_button:hover {
+  fill: #b01c4e;
+}

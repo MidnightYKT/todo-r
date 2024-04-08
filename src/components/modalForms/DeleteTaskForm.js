@@ -28,7 +28,9 @@ const DeleteTaskForm = () => {
       <Button theme={ButttonTheme.DANGER} onClick={onDelete}>
         Delete
       </Button>
-      <Button onClose={onClose}>Cancel</Button>
+      <Button theme={ButttonTheme.CANCEL} onClick={onClose}>
+        Cancel
+      </Button>
     </div>
   );
 };

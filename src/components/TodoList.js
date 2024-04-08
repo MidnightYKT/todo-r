@@ -25,8 +25,6 @@ const TodoList = () => {
     dispatch(fetchTasks());
   }, []);
 
-  console.log(todoList);
-
   return (
     <div className="todo">
       <h1 className="title">TODO LIST</h1>
@@ -42,9 +40,11 @@ const TodoList = () => {
       >
         Create Task
       </Button>
-      {todoList.map((el) => (
-        <TodoItem key={el._id} task={el} />
-      ))}
+      <div className="item_list">
+        {todoList.map((el) => (
+          <TodoItem key={el._id} task={el} />
+        ))}
+      </div>
     </div>
   );
 };
