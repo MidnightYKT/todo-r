@@ -5,7 +5,8 @@
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   border-radius: 0.5rem;
   height: 100%;
-  width: 40%;
+  width: 60%;
+  font-size: 24px;
 }
 
 .title {
@@ -16,4 +17,22 @@
 
 .item_list {
   padding: 15px;
+}
+
+@media (max-width: 425px) {
+  .todo {
+    width: 100%;
+    font-size: 16px;
+    margin: 15px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .todo {
+    width: 100%;
+    font-size: 16px;
+    margin: 15px;
+    padding: 5px;
+  }
 }

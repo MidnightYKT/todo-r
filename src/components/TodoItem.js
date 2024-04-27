@@ -27,14 +27,7 @@ const TodoItem = ({ task }) => {
     <div className="item">
       <div>
         <CheckBox checked={task.isDone} onChange={changeTaskStatus} />
-        <span
-          style={{
-            fontSize: "24px",
-            paddingRight: "10px",
-          }}
-        >
-          {task.name}
-        </span>
+        <span>{task.name}</span>
       </div>
 
       <div className="icons">
